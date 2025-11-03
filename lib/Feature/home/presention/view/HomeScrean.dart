@@ -1,15 +1,10 @@
-import 'dart:ffi';
-
-
 import 'package:eato/Feature/home/presention/view/settingView.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-
 import 'HomeView.dart';
-import 'bottomNavigationBar/bottomNavigationBarCustomize.dart';
 import 'deliveryPaga.dart';
 import 'favouriteVeiw.dart';
+import 'bottomNavigationBar/bottomNavigationBarCustomize.dart';
 
 class HomeScrean extends StatefulWidget {
   const HomeScrean({super.key});
@@ -19,45 +14,39 @@ class HomeScrean extends StatefulWidget {
 }
 
 class _HomeScreanState extends State<HomeScrean> {
-  int currentPageIndex = 0;
+  final PageController _pageController = PageController(initialPage: 0);
 
-  PageController controller = PageController(initialPage: 0);
-  getIndexPage(int index) {
-    setState(() {
-      currentPageIndex = index;
-    });
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      controller.jumpToPage(currentPageIndex);
-    });
-  }
+  final List<Widget> _pages = [
+    Homeview(),
+    DeliveryPaga(),
+    Favouriteveiw(),
+    SettingView(),
+  ];
 
-  void onChange(int index) {
-    setState(() {
-      currentPageIndex = index;
-    });
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: Stack(
         children: [
           PageView(
-            controller: controller,
-            onPageChanged: onChange,
-            children: [
-              Homeview(),
-              DeliveryPaga(),
-              Favouriteveiw(),
-              SettingView()
-            ],
+            controller: _pageController,
+            children: _pages,
           ),
           Positioned(
-            child: BottomNavigationBarCustomize(),
-            right: 0,
             left: 0,
-            bottom: .05.h,
-          )
+            right: 0,
+            bottom: 0,
+            child: BottomNavigationBarCustomize(
+              pageController: _pageController,
+            ),
+          ),
         ],
       ),
     );
