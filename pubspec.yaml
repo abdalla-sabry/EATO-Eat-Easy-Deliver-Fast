@@ -66,6 +66,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/BottomNavigaton_BAr_homeScrean/
+    - assets/images/catigouresHomeScrean/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

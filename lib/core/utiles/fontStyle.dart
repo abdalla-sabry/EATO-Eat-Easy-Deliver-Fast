@@ -5,33 +5,33 @@ import 'package:sizer/sizer.dart';
 
 abstract class styleText {
   //i order ai to creata it
+//Contanier Recommended
 
-
-// Main title like "Welcome,"
- static final TextStyle TitleTextStyle = TextStyle(
-    fontSize: 24.sp,
-    fontWeight: FontWeight.w700,
+// Main title like "Hamburger,"
+ static final TextStyle RecommendedFoodTitleTextStyle = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w500,
     color: Colors.black,
     letterSpacing: -0.5,
   );
 
-// Subheading like "E-Shop mobile store"
-  static  final TextStyle SubTitleTextStyle = TextStyle(
-    fontSize: 18.sp,
-    fontWeight: FontWeight.normal,
-    color: Colors.black,
+// Subheading like "prices"
+  static  final TextStyle RecommendedPricesTextStyle =GoogleFonts.poppins(
+    color: const Color(0xFF11AB69), // That specific green color
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,   // Semi-bold
   );
 
-// Search bar hint like "Search Product"
-  static final TextStyle SearchTextStyle = TextStyle(
-    fontSize: 15,
-    fontWeight: FontWeight.w500,
-    color: Colors.grey[600],
+// Search bar hint like "descrabe"
+      static  final TextStyle RecommendedDescrabeTextStyle = GoogleFonts.poppins(
+    color: Colors.grey.shade600,   // A medium grey color
+    fontSize: 13.5.sp,
+    fontWeight: FontWeight.normal,  // Regular weight
   );
-
+////
 // Product name like "Razer Viper V3 Pro"
   static  final TextStyle labelSelectedNameTextStyle = GoogleFonts.roboto(
-    fontSize: 16  .sp,
+    fontSize: 12 .sp,
     color: Color(0xff11AB69),
     fontWeight: FontWeight.w500,
   );
