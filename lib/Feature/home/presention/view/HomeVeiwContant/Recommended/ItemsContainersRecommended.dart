@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 class ItemsContainers extends StatelessWidget {
-  ItemsContainers({super.key, required this.imageUrl});
+  ItemsContainers({super.key, required this.imageUrl,required this.nameFood,required this.prisce});
   String imageUrl;
+  String prisce;
+  String nameFood;
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -19,9 +22,9 @@ class ItemsContainers extends StatelessWidget {
 
             // Bottom container
             SmallContanierRecommeded(
-              producteName: 'Hamburger',
+              producteName: nameFood,
               producteDescraption: 'Starting Form',
-              productePrice: '\$ 19.5',
+              productePrice: prisce,
             ),
             Positioned(
               top: 0,

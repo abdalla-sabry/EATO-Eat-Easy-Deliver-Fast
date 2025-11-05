@@ -18,7 +18,7 @@ class Homeview extends StatelessWidget {
 
     return  Scaffold(
       backgroundColor: Color(0xffFFFFFF),
-      body: Column(
+      body: ListView(
         children: [
           SizedBox(
             height: 5.h,
@@ -29,8 +29,13 @@ class Homeview extends StatelessWidget {
             height: 25/891*100.h,
           ),
           CatiorySection(),
-          RecommendedSection(),        ],
-      ),
+          RecommendedSection(),
+          SizedBox(
+            height: 100/891*100.h,
+          ),
+
+        ],
+      )
     );
   }
 }

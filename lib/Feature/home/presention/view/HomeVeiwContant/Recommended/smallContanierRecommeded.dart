@@ -37,7 +37,20 @@ final  String productePrice;
               SizedBox(
                 height: .5.h,
               ),
-              Text(productePrice,style:styleText.RecommendedPricesTextStyle,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(productePrice,style:styleText.RecommendedPricesTextStyle,),
+                  Padding(
+                    padding: EdgeInsets.only(right: 3.w),
+                    child: Container(
+                      height:20/414*100.h ,
+                      width: 20/414*100.w,
+                      child: Image.asset('assets/images/catigouresHomeScrean/Plus.png'),
+                    ),
+                  )
+                ],
+              ),
 
             ],
           ),
