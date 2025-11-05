@@ -1,0 +1,36 @@
+import 'package:eato/Feature/home/presention/view/HomeVeiwContant/Catigores/catigoresContainer/CircularbuttonInCatigoryContainer.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
+
+import 'MainContainerInCatigoryContainer.dart';
+
+class CatigoryContainer extends StatelessWidget {
+  const CatigoryContainer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: SizedBox(
+        width: 84 / 414 * 100.w,
+        height: 176 / 896 * 100.h,
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          clipBehavior: Clip.none,
+          children: [
+            // Main container (90 × 137)
+            MainContainerInCatigoryContainer(
+              isSelact: true,
+              urlPath: 'assets/images/catigouresHomeScrean/sandwatchSmaill.png',
+              catigoryName: 'sandwich',
+            ),
+            CircularbuttonInCatigoryContainer(
+              isSelact: true,
+            )
+            // Circular button (radius ≈ 30)
+          ],
+        ),
+      ),
+    );
+  }
+}

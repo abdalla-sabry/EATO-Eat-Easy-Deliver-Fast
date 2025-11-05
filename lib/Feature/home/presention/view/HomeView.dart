@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'HomeVeiwContant/Catigores/catigoresContainer/CatigoryContainer.dart';
 import 'HomeVeiwContant/Recommended/ItemsContainersRecommended.dart';
 
 class Homeview extends StatelessWidget {
@@ -11,7 +12,12 @@ class Homeview extends StatelessWidget {
 
     return  Scaffold(
       backgroundColor: Color(0xffFFFFFF),
-      body: Center(child: ItemsContainers(imageUrl: 'assets/images/catigouresHomeScrean/middumburger.png',)),
+      body: Column(
+        children: [
+          Center(child: ItemsContainers(imageUrl: 'assets/images/catigouresHomeScrean/middumburger.png',)),
+          Center(child: CatigoryContainer())
+        ],
+      ),
     );
   }
 }

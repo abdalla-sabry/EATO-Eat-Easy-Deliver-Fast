@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987646197679",
+    "project_id": "eato-eat-easy-deliver-fa-262cc",
+    "storage_bucket": "eato-eat-easy-deliver-fa-262cc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987646197679:android:5c009a2ca4e333ec71795a",
+        "android_client_info": {
+          "package_name": "com.example.eato"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMlHMQc2XxEM3ah_KiLCRyL6w8S3t8Nlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

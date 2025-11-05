@@ -4,9 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 abstract class styleText {
-  //i order ai to creata it
-//Contanier Recommended
 
+//Contanier Recommended
 // Main title like "Hamburger,"
  static final TextStyle RecommendedFoodTitleTextStyle = TextStyle(
     fontSize: 18.sp,
@@ -28,13 +27,15 @@ abstract class styleText {
     fontSize: 13.5.sp,
     fontWeight: FontWeight.normal,  // Regular weight
   );
-////
-// Product name like "Razer Viper V3 Pro"
-  static  final TextStyle labelSelectedNameTextStyle = GoogleFonts.roboto(
-    fontSize: 12 .sp,
-    color: Color(0xff11AB69),
-    fontWeight: FontWeight.w500,
+////*******************************************************************
+// catigory NameOfProduce
+  static  final TextStyle catigoryProductNameTextStyle =   GoogleFonts.poppins(
+  color: Colors.white,
+  fontSize: 15.sp,
+  fontWeight: FontWeight.w600,
+  letterSpacing: 0.3,
   );
+
 
 // Product price like "$151.99"
   static  final TextStyle PriceTextStyle = GoogleFonts.plusJakartaSans(
