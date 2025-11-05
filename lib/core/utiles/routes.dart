@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../Feature/authantication/presention/view/authentication/signUp/signUpVeiwBlocProvider.dart';
-import '../../Feature/authantication/presention/view/authentication/signUp/signupVeiw.dart';
-import '../../Feature/authantication/presention/view/authentication/singIn/SingInVeiwBlocProvider.dart';
+import '../../Feature/home/presention/view/HomeView.dart';
+import '../../Feature/home/presention/view/ItemProductPage/ItemProductView.dart';
 
 
 Map<String, Widget Function(BuildContext)> routeMap = {
-  // SignUpView.routeName: (context) => SignUpView(),
+  Homeview.routeName: (context) => Homeview(),
   // Singinveiwblocprovider.routeName: (context) => Singinveiwblocprovider(),
   // SignupVeiwBlocProvider.routeName: (context) => SignupVeiwBlocProvider(),
   // Homebody.routeName: (context) => Homebody(),

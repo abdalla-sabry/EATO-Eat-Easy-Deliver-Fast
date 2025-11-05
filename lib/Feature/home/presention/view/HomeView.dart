@@ -12,7 +12,7 @@ import 'HomeVeiwContant/TopBarSection/AvaterWithAppName.dart';
 
 class Homeview extends StatelessWidget {
   const Homeview({super.key});
-
+  static const String routeName='Homeview';
   @override
   Widget build(BuildContext context) {
 

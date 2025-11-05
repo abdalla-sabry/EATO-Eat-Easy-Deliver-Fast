@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:sizer/sizer.dart';
 
 import 'Feature/home/presention/view/HomeScrean.dart';
+import 'core/utiles/routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // 👈 must be first
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           home:  HomeScrean(),
+          routes: routeMap,
         );
       },
     );
