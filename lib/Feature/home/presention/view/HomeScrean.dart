@@ -2,6 +2,7 @@ import 'package:eato/Feature/home/presention/view/settingView.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'HomeView.dart';
+import 'bottomNavigationbar0/Bottomnavigtionbar.dart';
 import 'deliveryPaga.dart';
 import 'favouriteVeiw.dart';
 import 'bottomNavigationBar/bottomNavigationBarCustomize.dart';
@@ -33,6 +34,7 @@ class _HomeScreanState extends State<HomeScrean> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
+      backgroundColor: Color(0xffF3F3F3),
       body: Stack(
         children: [
           PageView(
@@ -40,13 +42,12 @@ class _HomeScreanState extends State<HomeScrean> {
             children: _pages,
           ),
           Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
-            child: BottomNavigationBarCustomize(
-              pageController: _pageController,
-            ),
-          ),
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: BottomNavigationBarCustomize(
+                pageController: _pageController,
+              )),
         ],
       ),
     );

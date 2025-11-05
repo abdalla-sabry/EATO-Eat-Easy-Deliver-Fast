@@ -1,8 +1,11 @@
+import 'package:eato/core/utiles/fontStyle.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 import 'HomeVeiwContant/Catigores/catigoresContainer/CatigoryContainer.dart';
 import 'HomeVeiwContant/Recommended/ItemsContainersRecommended.dart';
+import 'HomeVeiwContant/Top_Home_Veiw/AvaterWithAppName.dart';
 
 class Homeview extends StatelessWidget {
   const Homeview({super.key});
@@ -14,6 +17,10 @@ class Homeview extends StatelessWidget {
       backgroundColor: Color(0xffFFFFFF),
       body: Column(
         children: [
+          SizedBox(
+            height: 5.h,
+          ),
+          AvaterWithAppName(),
           Center(child: ItemsContainers(imageUrl: 'assets/images/catigouresHomeScrean/middumburger.png',)),
           Center(child: CatigoryContainer())
         ],

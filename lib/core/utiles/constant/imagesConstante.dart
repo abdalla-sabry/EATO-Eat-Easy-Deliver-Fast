@@ -1,4 +1,4 @@
-const String kUserAvatar = "assets/other_images/user.png";
+const String kUserAvatar = "assets/images/userImage.png";
 const String kAppLogo = "assets/other_images/logo.png";
 
 //Status Image
@@ -10,4 +10,4 @@ const String kEmpty = "assets/status_image/empty.png";
 const String kOrderDelivery = "assets/status_image/order-delivery.png";
 
 //Icon
-const String kFilterIcon = "assets/icons/filter.png";
+const String kFilterIcon = "assets/images/Category.png";

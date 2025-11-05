@@ -16,6 +16,13 @@ class ItemsContainers extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             // Top container
+
+            // Bottom container
+            SmallContanierRecommeded(
+              producteName: 'Hamburger',
+              producteDescraption: 'Starting Form',
+              productePrice: '\$ 19.5',
+            ),
             Positioned(
               top: 0,
               child: Container(
@@ -27,13 +34,6 @@ class ItemsContainers extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-            ),
-
-            // Bottom container
-            SmallContanierRecommeded(
-              producteName: 'Hamburger',
-              producteDescraption: 'Starting Form',
-              productePrice: '\$ 19.5',
             ),
 
           ],
