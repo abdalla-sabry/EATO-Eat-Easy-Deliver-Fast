@@ -4,8 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-class AvaterWithAppName extends StatelessWidget {
-  const AvaterWithAppName({super.key});
+class TopBarSection extends StatelessWidget {
+  const TopBarSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class AvaterWithAppName extends StatelessWidget {
           height: 2.5.h,
         ),
         Padding(
-          padding:  EdgeInsets.only(left: 5.w),
+          padding: EdgeInsets.only(left: 5.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

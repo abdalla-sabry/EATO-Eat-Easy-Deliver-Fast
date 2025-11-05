@@ -10,4 +10,4 @@ const String kEmpty = "assets/status_image/empty.png";
 const String kOrderDelivery = "assets/status_image/order-delivery.png";
 
 //Icon
-const String kFilterIcon = "assets/images/Category.png";
+const String kFilterIcon = "assets/images/sliders.png";

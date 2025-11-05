@@ -5,7 +5,8 @@ import 'package:sizer/sizer.dart';
 
 import 'HomeVeiwContant/Catigores/catigoresContainer/CatigoryContainer.dart';
 import 'HomeVeiwContant/Recommended/ItemsContainersRecommended.dart';
-import 'HomeVeiwContant/Top_Home_Veiw/AvaterWithAppName.dart';
+import 'HomeVeiwContant/SearchBarAndCatigory/SearchBarAndCarigory.dart';
+import 'HomeVeiwContant/TopBarSection/AvaterWithAppName.dart';
 
 class Homeview extends StatelessWidget {
   const Homeview({super.key});
@@ -20,7 +21,8 @@ class Homeview extends StatelessWidget {
           SizedBox(
             height: 5.h,
           ),
-          AvaterWithAppName(),
+          TopBarSection(),
+          Searchbarsection(),
           Center(child: ItemsContainers(imageUrl: 'assets/images/catigouresHomeScrean/middumburger.png',)),
           Center(child: CatigoryContainer())
         ],
