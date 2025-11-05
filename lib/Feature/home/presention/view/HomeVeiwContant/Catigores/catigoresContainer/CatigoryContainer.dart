@@ -6,8 +6,10 @@ import 'package:sizer/sizer.dart';
 import 'MainContainerInCatigoryContainer.dart';
 
 class CatigoryContainer extends StatelessWidget {
-  const CatigoryContainer({super.key});
-
+   CatigoryContainer({super.key,required this.urlPath,required this.catigoryName,required this.isSelact});
+String urlPath;
+String catigoryName;
+bool isSelact;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,12 +22,12 @@ class CatigoryContainer extends StatelessWidget {
           children: [
             // Main container (90 × 137)
             MainContainerInCatigoryContainer(
-              isSelact: true,
-              urlPath: 'assets/images/catigouresHomeScrean/sandwatchSmaill.png',
-              catigoryName: 'sandwich',
+              isSelact: isSelact,
+              urlPath: urlPath,
+              catigoryName:catigoryName,
             ),
             CircularbuttonInCatigoryContainer(
-              isSelact: true,
+              isSelact: isSelact,
             )
             // Circular button (radius ≈ 30)
           ],

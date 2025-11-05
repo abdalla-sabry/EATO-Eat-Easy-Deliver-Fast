@@ -40,7 +40,7 @@ class ContaintOfMainContainerInCatigoryContainer extends StatelessWidget {
       children: [
         SizedBox(height: 25 / 896 * 100.h),
         Padding(
-          padding: EdgeInsets.only(left: 2.5.w),
+          padding: EdgeInsets.only(left: 3.3.w),
           child: Image.asset(
                 urlPath,
             height: 55 / 896 * 100.h, // example image height from Figma

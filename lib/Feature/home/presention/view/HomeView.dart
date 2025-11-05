@@ -3,8 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import 'HomeVeiwContant/Catigores/Catiorysection.dart';
 import 'HomeVeiwContant/Catigores/catigoresContainer/CatigoryContainer.dart';
 import 'HomeVeiwContant/Recommended/ItemsContainersRecommended.dart';
+import 'HomeVeiwContant/Recommended/RecommendedSection.dart';
 import 'HomeVeiwContant/SearchBarAndCatigory/SearchBarAndCarigory.dart';
 import 'HomeVeiwContant/TopBarSection/AvaterWithAppName.dart';
 
@@ -23,9 +25,11 @@ class Homeview extends StatelessWidget {
           ),
           TopBarSection(),
           Searchbarsection(),
-          Center(child: ItemsContainers(imageUrl: 'assets/images/catigouresHomeScrean/middumburger.png',)),
-          Center(child: CatigoryContainer())
-        ],
+          SizedBox(
+            height: 25/891*100.h,
+          ),
+          CatiorySection(),
+          RecommendedSection(),        ],
       ),
     );
   }
