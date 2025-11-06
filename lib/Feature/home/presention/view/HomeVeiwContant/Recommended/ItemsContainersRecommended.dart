@@ -6,9 +6,13 @@ import 'package:sizer/sizer.dart';
 import '../../ItemProductPage/ItemProductView.dart';
 
 class ItemsContainers extends StatelessWidget {
-  ItemsContainers({super.key, required this.imageUrl,required this.nameFood,required this.prisce});
+  ItemsContainers(
+      {super.key,
+      required this.imageUrl,
+      required this.nameFood,
+      required this.prise});
   String imageUrl;
-  String prisce;
+  String prise;
   String nameFood;
 
   @override
@@ -26,7 +30,7 @@ class ItemsContainers extends StatelessWidget {
             SmallContanierRecommeded(
               producteName: nameFood,
               producteDescraption: 'Starting Form',
-              productePrice: prisce,
+              productePrice: prise,
             ),
             Positioned(
               top: 0,
@@ -36,17 +40,19 @@ class ItemsContainers extends StatelessWidget {
                 decoration: BoxDecoration(),
                 child: GestureDetector(
                   onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => ItemProductView(imageUrl: imageUrl,productName: nameFood),
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ItemProductView(
+                          imageUrl: imageUrl,
+                          productName: nameFood,
+                          prisce: prise,
                         ),
-                      );
-                    },
-
-
+                      ),
+                    );
+                  },
                   child: Hero(
-                    tag:nameFood,
+                    tag: nameFood,
                     child: Image.asset(
                       imageUrl,
                       fit: BoxFit.contain,
@@ -55,7 +61,6 @@ class ItemsContainers extends StatelessWidget {
                 ),
               ),
             ),
-
           ],
         ),
       ),

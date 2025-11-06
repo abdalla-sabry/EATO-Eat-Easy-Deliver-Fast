@@ -51,7 +51,7 @@ class RecommendedSection extends StatelessWidget {
                 return Center(
                   child: ItemsContainers(
                     nameFood: foodName[index],
-                    prisce: prices[index],
+                    prise: prices[index],
                     imageUrl: images[index],
                   ),
                 );
