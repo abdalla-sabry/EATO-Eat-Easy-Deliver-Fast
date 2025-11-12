@@ -11,3 +11,5 @@ const String kOrderDelivery = "assets/status_image/order-delivery.png";
 
 //Icon
 const String kFilterIcon = "assets/images/sliders.png";
+//map key
+const String kKeymap = "AIzaSyA7P8_GD8cx_bkZ1rLhUNxeHbma4lq1OCk";

@@ -27,7 +27,7 @@ class ImageContainer extends StatelessWidget {
                 width:340 / 414 * 100.w,
                 height: 340 / 896 * 100.h,
                 decoration:  BoxDecoration(
-                  color: Colors.black12,
+                  color: Colors.green[50],
                   shape: BoxShape.circle, // 👈 makes it perfectly circular
                 ),
               ),

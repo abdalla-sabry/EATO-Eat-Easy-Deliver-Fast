@@ -1,11 +1,12 @@
-import 'package:eato/Feature/home/presention/view/settingView.dart';
+import 'package:eato/Feature/home/presention/view/SettingView/settingView.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'HomeView.dart';
-import 'bottomNavigationbar0/Bottomnavigtionbar.dart';
-import 'deliveryPaga.dart';
-import 'favouriteVeiw.dart';
-import 'bottomNavigationBar/bottomNavigationBarCustomize.dart';
+import 'CartVeiw/CartVeiw.dart';
+import 'HomeView/HomeView.dart';
+import 'HomeView/bottomNavigationBar/bottomNavigationBarCustomize.dart';
+import 'deliveryView/DelivryPageWthOutDeliveyProcessing.dart';
+import 'deliveryView/deliveryPaga.dart';
+import 'FavouriteView/favouriteVeiw.dart';
 
 class HomeScrean extends StatefulWidget {
   const HomeScrean({super.key});
@@ -19,8 +20,11 @@ class _HomeScreanState extends State<HomeScrean> {
 
   final List<Widget> _pages = [
     Homeview(),
-    DeliveryPaga(),
     Favouriteveiw(),
+    DelivryPageWthOutDeliveyProcessing(),
+
+    CartVeiw(),
+
     SettingView(),
   ];
 
@@ -38,6 +42,7 @@ class _HomeScreanState extends State<HomeScrean> {
       body: Stack(
         children: [
           PageView(
+            physics: ScrollPhysics(parent: NeverScrollableScrollPhysics()),
             controller: _pageController,
             children: _pages,
           ),

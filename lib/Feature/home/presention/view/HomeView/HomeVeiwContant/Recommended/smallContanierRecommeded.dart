@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../../../../core/utiles/fontStyle.dart';
+import '../../../../../../../core/utiles/fontStyle.dart';
+
 
 class SmallContanierRecommeded extends StatelessWidget {
    SmallContanierRecommeded({super.key, required this.producteName, required this.producteDescraption, required this.productePrice});

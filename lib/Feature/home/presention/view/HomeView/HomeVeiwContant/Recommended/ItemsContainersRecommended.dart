@@ -1,9 +1,10 @@
-import 'package:eato/Feature/home/presention/view/HomeVeiwContant/Recommended/smallContanierRecommeded.dart';
+import 'package:eato/Feature/home/presention/view/HomeView/HomeVeiwContant/Recommended/smallContanierRecommeded.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../ItemProductPage/ItemProductView.dart';
+import '../../../ItemProductPage/ItemProductView.dart';
+
 
 class ItemsContainers extends StatelessWidget {
   ItemsContainers(
@@ -45,7 +46,7 @@ class ItemsContainers extends StatelessWidget {
                       MaterialPageRoute(
                         builder: (context) => ItemProductView(
                           imageUrl: imageUrl,
-                          productName: nameFood,
+                          foodName: nameFood,
                           prisce: prise,
                         ),
                       ),

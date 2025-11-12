@@ -10,7 +10,8 @@ plugins {
 
 android {
     namespace = "com.example.eato"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 35
+
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
