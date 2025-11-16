@@ -16,7 +16,7 @@ String prise;
         padding: const EdgeInsets.all(12.0),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center, // Vertically center items
-          children: [
+          children: [///
             // 1. Image Placeholder
             // This is the pink-ish box on the left of your image
             ClipRRect(
