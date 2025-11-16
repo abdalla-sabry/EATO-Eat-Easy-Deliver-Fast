@@ -37,13 +37,12 @@ class _BottomNavigationBarCustomizeState
       color: Colors.white,
       showLabel: true,
       notchColor: Color(0xff11AB69),
-      bottomBarHeight: 8.h,          // total BottomBar height
+      bottomBarHeight: 8.h,
       durationInMilliSeconds: 300,
       bottomBarItems: kBottomBarItemsBar,
       onTap: _onTap,
-      kIconSize: 20,                  // <-- make this match your active image height
+      kIconSize: 20,
       kBottomRadius: 15,
-    )
-    ;
+    );
   }
 }

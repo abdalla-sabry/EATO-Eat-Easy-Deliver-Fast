@@ -42,8 +42,9 @@ class _CatigoryItemsSectionState extends State<CatigoryItemsSection> {
     // Example: change index when user scrolls 24% of the width
     double scrollPercent =
         _scrollController.offset / _scrollController.position.maxScrollExtent;
-
-    if (scrollPercent > 0.24 && selectedIndex != 1) {
+    if (scrollPercent <= 0.75 && scrollPercent > 0.5 && selectedIndex != 2) {
+      setState(() => selectedIndex = 1);
+    } else if (scrollPercent <= 0.5 && scrollPercent > 0.24 && selectedIndex != 1) {
       setState(() => selectedIndex = 1);
     } else if (scrollPercent <= 0.24 && selectedIndex != 0) {
       setState(() => selectedIndex = 0);
@@ -60,7 +61,8 @@ class _CatigoryItemsSectionState extends State<CatigoryItemsSection> {
           controller: _scrollController,
           scrollDirection: Axis.horizontal,
           itemCount: items.length,
-          separatorBuilder: (context, index) => SizedBox(width: 21 / 414 * 100.w),
+          separatorBuilder: (context, index) =>
+              SizedBox(width: 22 / 414 * 100.w),
           itemBuilder: (context, index) {
             return CatigoryContainer(
               urlPath: items[index]['image']!,

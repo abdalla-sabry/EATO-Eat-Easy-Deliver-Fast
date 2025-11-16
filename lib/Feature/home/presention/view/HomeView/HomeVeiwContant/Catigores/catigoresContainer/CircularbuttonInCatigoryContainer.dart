@@ -9,7 +9,8 @@ class CircularbuttonInCatigoryContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom: 0,
+      bottom: .2.h,
+      left: 7.2.w,
       child: Container(
         width: 30 / 414 * 100.w,
         height: 30 / 414 * 100.w,

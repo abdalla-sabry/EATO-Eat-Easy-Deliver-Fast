@@ -9,9 +9,15 @@ import 'HomeVeiwContant/SearchBarAndCatigory/SearchBarAndCarigory.dart';
 import 'HomeVeiwContant/TopBarSection/AvaterWithAppName.dart';
 import '../deliveryView/deliveryPaga.dart';
 
-class Homeview extends StatelessWidget {
+class Homeview extends StatefulWidget {
   const Homeview({super.key});
   static const String routeName='Homeview';
+
+  @override
+  State<Homeview> createState() => _HomeviewState();
+}
+
+class _HomeviewState extends State<Homeview> {
   @override
   Widget build(BuildContext context) {
 

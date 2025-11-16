@@ -64,25 +64,6 @@ List<BottomBarItem> kBottomBarItemsBar = [
   BottomBarItem(
     inActiveItem: Center(
       child: Image.asset(
-        'assets/images/BottomNavigaton_BAr_homeScrean/shop.png',
-        height: 24,
-        width: 24,
-        fit: BoxFit.contain,
-      ),
-    ),
-    activeItem: Center(
-      child: Image.asset(
-        'assets/images/BottomNavigaton_BAr_homeScrean/shopingGray.png',
-        height: 28,
-        width: 28,
-        fit: BoxFit.contain,
-      ),
-    ),
-    itemLabel: 'Cart',
-  ),
-  BottomBarItem(
-    inActiveItem: Center(
-      child: Image.asset(
         'assets/images/BottomNavigaton_BAr_homeScrean/person.png',
         height: 24,
         width: 24,

@@ -23,7 +23,6 @@ class _HomeScreanState extends State<HomeScrean> {
     Favouriteveiw(),
     DelivryPageWthOutDeliveyProcessing(),
 
-    CartVeiw(),
 
     SettingView(),
   ];
