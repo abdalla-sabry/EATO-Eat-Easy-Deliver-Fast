@@ -74,16 +74,24 @@ Modern and reactive state flow for better structure and testing.
 # 🎬 Demo Sample
 
 <table align="center">
-<tr>
-<td align="center"><img src="https://res.cloudinary.com/dhyttttax/image/upload/v1695741758/RepoAssets/home-loading_r39lc6.gif" width="200"/></td>
-<td align="center"><img src="https://res.cloudinary.com/dhyttttax/image/upload/v1695743869/RepoAssets/home-navigation-min_q1cou5.gif" width="200"/></td>
-<td align="center"><img src="https://res.cloudinary.com/dhyttttax/image/upload/v1695744798/RepoAssets/product-details-order_j0lvw5.gif" width="200"/></td>
-</tr>
-<tr>
-<td align="center"><img src="https://res.cloudinary.com/dhyttttax/image/upload/v1695746530/RepoAssets/user-auth-screens_k3h6fw.gif" width="200"/></td>
-<td align="center"><img src="https://res.cloudinary.com/dhyttttax/image/upload/v1695747060/RepoAssets/user-sign-in-loading_qjqmt0.gif" width="200"/></td>
-</tr>
+  <tr>
+    <td align="center">
+      <img src="https://drive.google.com/uc?export=view&id=18IJ0iIbYBLuphp7luOYSQ3HfRr6Zs1pe" width="200"/>
+    </td>
+    <td align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1osBJET2LOWwHAhXjY_1Zusy5QgIwBr6p" width="200"/>
+    </td>
+    <td align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1w22RNpxINUIh5sICaA4w1HQNSvBSktkS" width="200"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1qjHKDulKoDj98ZRYxsi2YMrjhgPkT99R" width="200"/>
+    </td>
+  </tr>
 </table>
+
 
 ---
 
@@ -93,3 +101,4 @@ EATO is designed to provide a clean and fast food delivery experience with stron
 ### 🏷️ Topics
 `tdd` `clean-code` `clean-architecture` `test-driven-development` `flutter`  
 `flutter-examples` `flutter-ui` `flutter-app` `flutter-e-commerce`
+
