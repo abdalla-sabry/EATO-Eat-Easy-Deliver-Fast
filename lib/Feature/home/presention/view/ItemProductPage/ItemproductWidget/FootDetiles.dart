@@ -33,7 +33,7 @@ String prise;
                 child: Icon(Icons.fastfood, color: Colors.green[200], size: 40),
               ),
             ),
-
+//
             // 2. Space between image and text
             const SizedBox(width: 16),
 
