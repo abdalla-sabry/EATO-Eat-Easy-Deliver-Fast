@@ -20,7 +20,7 @@ EATO is a complete Food Delivery application developed using **Flutter 3**, foll
 This project demonstrates how to build a **scalable, testable, modular, and professional** Flutter application.  
 The goal is to combine **clean architecture discipline** with **real-world UI/UX** to deliver a smooth and intuitive food ordering experience.
 
-![EATO App Cover](assets/images/Food%20Delivery%20Mobile%20App.png)
+![EATO App Cover](https://drive.google.com/uc?export=view&id=1CvJSrO-MJCagmNZ2cJONf_eA08qTIKhP)
 
 > ⚠️ Make sure the image file path is exactly `assets/images/Food Delivery Mobile App.png` (spaces encoded as `%20` in the link).  
 > If you prefer a path without spaces, rename the file to e.g. `food_delivery_cover.png` and update the link to `assets/images/food_delivery_cover.png`.
@@ -101,4 +101,5 @@ EATO is designed to provide a clean and fast food delivery experience with stron
 ### 🏷️ Topics
 `tdd` `clean-code` `clean-architecture` `test-driven-development` `flutter`  
 `flutter-examples` `flutter-ui` `flutter-app` `flutter-e-commerce`
+
 
